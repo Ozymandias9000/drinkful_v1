@@ -4,13 +4,14 @@ import BeerCard from "./BeerCard/BeerCard";
 
 class BeerList extends Component {
   render() {
+    let { beers } = this.props;
+
+    if (!beers) {
+      return <p>Nothing to show!</p>;
+    }
     return (
       <div className="beer-list--container">
-        {/* <p>{this.props.beers[0].name}</p> */}
-        <BeerCard />
-        <BeerCard />
-        <BeerCard />
-        <BeerCard />
+        {beers.map(beer => <BeerCard beer={beer} />)}
       </div>
     );
   }

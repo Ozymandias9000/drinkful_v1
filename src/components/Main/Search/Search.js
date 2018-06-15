@@ -5,7 +5,7 @@ class Search extends Component {
   render() {
     return (
       <div className="search--box">
-        <form>
+        <form onSubmit={this.props.fetchBeers}>
           <input
             type="text"
             placeholder="Search for beer!"
@@ -13,7 +13,7 @@ class Search extends Component {
             name="search--input"
             onChange={this.props.updateSearchInput}
           />
-          <input type="submit" onSubmit={this.props.fetchBeers} />
+          <input type="submit" />
         </form>
       </div>
     );

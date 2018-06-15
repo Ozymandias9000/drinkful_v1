@@ -9,7 +9,32 @@ class Main extends Component {
     this.state = {
       searchInput: "",
       loading: true,
-      beers: [],
+      beers: [
+        {
+          name: "Big 'ld Ale!",
+          image_url: "https://images.punkapi.com/v2/42.png"
+        },
+        {
+          name: "Big 'ld Ale!",
+          image_url: "https://images.punkapi.com/v2/42.png"
+        },
+        {
+          name: "Big 'ld Ale!",
+          image_url: "https://images.punkapi.com/v2/42.png"
+        },
+        {
+          name: "Big 'ld Ale!",
+          image_url: "https://images.punkapi.com/v2/42.png"
+        },
+        {
+          name: "Big 'ld Ale!",
+          image_url: "https://images.punkapi.com/v2/42.png"
+        },
+        {
+          name: "Big 'ld Ale!",
+          image_url: "https://images.punkapi.com/v2/42.png"
+        }
+      ],
       error: null
     };
   }
@@ -18,9 +43,9 @@ class Main extends Component {
     this.setState({ loading: false });
   }
 
-  async fetchBeers() {
+  async fetchBeers(e) {
+    e.preventDefault();
     this.setState({ loading: true });
-
     // change to REACT_APP_API_BASE before build
     fetch(
       `https://api.punkapi.com/v2/beers?beer_name=${
@@ -29,6 +54,7 @@ class Main extends Component {
     )
       .then(res => res.json())
       .then(data => this.setState({ beers: data, loading: false }))
+      // .then(console.log(this.state.beers))
       .catch(error => {
         console.log("Error", error);
         this.setState({
@@ -36,6 +62,7 @@ class Main extends Component {
           loading: false
         });
       });
+    // console.log(this.state);
   }
 
   updateSearchInput(e) {
