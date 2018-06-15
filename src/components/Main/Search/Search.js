@@ -11,8 +11,9 @@ class Search extends Component {
             placeholder="Search for beer!"
             id="search--input"
             name="search--input"
+            onChange={this.props.updateSearchInput}
           />
-          <input type="submit" />
+          <input type="submit" onSubmit={this.props.fetchBeers} />
         </form>
       </div>
     );

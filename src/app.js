@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./app.css";
 import Nav from "./components/Nav/Nav";
 import Main from "./components/Main/Main";
+require("dotenv").config({ path: "../.env" });
 
 class App extends Component {
   render() {
