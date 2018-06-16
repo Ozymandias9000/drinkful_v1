@@ -1,14 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico');
+
 @import './components/Nav/Nav.styl'
 @import './components/Main/Main.styl'
 @import './components/Main/Search/Search.styl'
 @import './components/Main/BeerList/BeerList.styl'
 @import './components/Main/BeerList/BeerCard/BeerCard.styl'
+@import './variables.styl'
 
-/* Variables */
-black = #111
-white = #FCFCFC
-gray = #AAA
-/* ------------------ */
 *
   box-sizing border-box
 
@@ -19,10 +17,19 @@ gray = #AAA
   font-size 20px
 
 body
+  padding 0
+  margin 0
+  font-family 'Open Sans', sans-serif
   height 100vh
   width 100vw
   color black
   background white
+  &:before
+    content: '';
+    display: block;
+    background: linear-gradient(90deg, #48ded4 0%, #a026bf 20%, #e82c75 60%, #FFC40E 85%, #48ded4 95%);
+    height: 10px;
+    width: 100%;
 
 .app
   height 100vh

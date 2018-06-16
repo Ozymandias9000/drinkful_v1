@@ -5,7 +5,7 @@ class BeerCard extends Component {
   render() {
     let { name, tagline, image_url } = this.props.beer;
     return (
-      <div className="beer-card">
+      <div className="beer-card" tabindex="0">
         <img
           src={image_url}
           alt="beer"

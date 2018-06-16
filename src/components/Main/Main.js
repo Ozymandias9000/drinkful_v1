@@ -76,13 +76,13 @@ class Main extends Component {
     }
 
     return (
-      <div className="main--container">
+      <main className="main--container">
         <Search
           updateSearchInput={this.updateSearchInput.bind(this)}
           fetchBeers={this.fetchBeers.bind(this)}
         />
         <BeerList beers={beers} />
-      </div>
+      </main>
     );
   }
 }
