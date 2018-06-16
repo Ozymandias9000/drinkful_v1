@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./Main.styl";
 import BeerList from "./BeerList/BeerList";
 import Search from "./Search/Search";
+import Loading from "../Loading/Loading";
 
 class Main extends Component {
   constructor(props) {
@@ -12,27 +13,63 @@ class Main extends Component {
       beers: [
         {
           name: "Big 'ld Ale!",
-          image_url: "https://images.punkapi.com/v2/42.png"
+          image_url: "https://images.punkapi.com/v2/42.png",
+          id: "1",
+          tagline: "Explict Imperial Ale. Boom!",
+          description:
+            "Pounding a triple payload of the biggest North American hops humanity has devised, braced by a backbone of caramel malt, this beer is deep, astringent and resinous, pushing to the extremes of lupulin thresholds. There’s nothing inscrutable going on; no mystery in the backstory. It doesn’t seek to be understood. A beer incapable of empathy; only hop overload.",
+          abv: 9.2,
+          ibu: 123
         },
         {
           name: "Big 'ld Ale!",
-          image_url: "https://images.punkapi.com/v2/42.png"
+          image_url: "https://images.punkapi.com/v2/42.png",
+          id: "1",
+          tagline: "Explict Imperial Ale. Boom!",
+          description:
+            "Pounding a triple payload of the biggest North American hops humanity has devised, braced by a backbone of caramel malt, this beer is deep, astringent and resinous, pushing to the extremes of lupulin thresholds. There’s nothing inscrutable going on; no mystery in the backstory. It doesn’t seek to be understood. A beer incapable of empathy; only hop overload.",
+          abv: 9.2,
+          ibu: 123
         },
         {
           name: "Big 'ld Ale!",
-          image_url: "https://images.punkapi.com/v2/42.png"
+          image_url: "https://images.punkapi.com/v2/42.png",
+          id: "1",
+          tagline: "Explict Imperial Ale. Boom!",
+          description:
+            "Pounding a triple payload of the biggest North American hops humanity has devised, braced by a backbone of caramel malt, this beer is deep, astringent and resinous, pushing to the extremes of lupulin thresholds. There’s nothing inscrutable going on; no mystery in the backstory. It doesn’t seek to be understood. A beer incapable of empathy; only hop overload.",
+          abv: 9.2,
+          ibu: 123
         },
         {
           name: "Big 'ld Ale!",
-          image_url: "https://images.punkapi.com/v2/42.png"
+          image_url: "https://images.punkapi.com/v2/42.png",
+          id: "1",
+          tagline: "Explict Imperial Ale. Boom!",
+          description:
+            "Pounding a triple payload of the biggest North American hops humanity has devised, braced by a backbone of caramel malt, this beer is deep, astringent and resinous, pushing to the extremes of lupulin thresholds. There’s nothing inscrutable going on; no mystery in the backstory. It doesn’t seek to be understood. A beer incapable of empathy; only hop overload.",
+          abv: 9.2,
+          ibu: 123
         },
         {
           name: "Big 'ld Ale!",
-          image_url: "https://images.punkapi.com/v2/42.png"
+          image_url: "https://images.punkapi.com/v2/42.png",
+          id: "1",
+          tagline: "Explict Imperial Ale. Boom!",
+          description:
+            "Pounding a triple payload of the biggest North American hops humanity has devised, braced by a backbone of caramel malt, this beer is deep, astringent and resinous, pushing to the extremes of lupulin thresholds. There’s nothing inscrutable going on; no mystery in the backstory. It doesn’t seek to be understood. A beer incapable of empathy; only hop overload.",
+          abv: 9.2,
+          ibu: 123
         },
         {
           name: "Big 'ld Ale!",
-          image_url: "https://images.punkapi.com/v2/42.png"
+          image_url: "https://images.punkapi.com/v2/42.png",
+          id: "1",
+          tagline: "Explict Imperial Ale. Boom!",
+          description:
+            "Pounding a triple payload of the biggest North American hops humanity has devised, braced by a backbone of caramel malt, this beer is deep, astringent and resinous, pushing to the extremes of lupulin thresholds. There’s nothing inscrutable going on; no mystery in the backstory. It doesn’t seek to be understood. A beer incapable of empathy; only hop overload.",
+          abv: 9.2,
+          ibu: 123
         }
       ],
       error: null
@@ -72,7 +109,11 @@ class Main extends Component {
   render() {
     const { loading, beers } = this.state;
     if (loading) {
-      return <div>Loading...</div>;
+      return (
+        <div className="loading--container">
+          <Loading />
+        </div>
+      );
     }
 
     return (

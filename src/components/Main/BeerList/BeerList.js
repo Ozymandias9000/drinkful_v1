@@ -9,9 +9,10 @@ class BeerList extends Component {
     if (!beers) {
       return <p>Nothing to show!</p>;
     }
+
     return (
       <div className="beer-list--container">
-        {beers.map(beer => <BeerCard beer={beer} />)}
+        {beers.map(beer => <BeerCard beer={beer} key={beer.id} />)}
       </div>
     );
   }

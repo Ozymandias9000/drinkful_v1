@@ -1,6 +1,18 @@
 .beer-card
+  display flex
+  justify-content center
+  align-items center
   border 2px solid #bada55
+  min-height 300px
   padding 10px
   transition all .2s
   &:focus, &:hover
     transform scale(1.05)
+
+.beer-card p
+  display inline-block
+  margin-right 10px
+  font-size .6rem
+  font-weight 600
+  &:before
+    content "• "
