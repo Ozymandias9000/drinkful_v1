@@ -83,7 +83,6 @@ class Main extends Component {
   async fetchBeers(e) {
     e.preventDefault();
     this.setState({ loading: true });
-    // change to REACT_APP_API_BASE before build
     fetch(
       `https://api.punkapi.com/v2/beers?beer_name=${
         this.state.searchInput
