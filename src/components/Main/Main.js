@@ -10,68 +10,7 @@ class Main extends Component {
     this.state = {
       searchInput: "",
       loading: true,
-      beers: [
-        {
-          name: "Big 'ld Ale!",
-          image_url: "https://images.punkapi.com/v2/42.png",
-          id: "1",
-          tagline: "Explict Imperial Ale. Boom!",
-          description:
-            "Pounding a triple payload of the biggest North American hops humanity has devised, braced by a backbone of caramel malt, this beer is deep, astringent and resinous, pushing to the extremes of lupulin thresholds. There’s nothing inscrutable going on; no mystery in the backstory. It doesn’t seek to be understood. A beer incapable of empathy; only hop overload.",
-          abv: 9.2,
-          ibu: 123
-        },
-        {
-          name: "Big 'ld Ale!",
-          image_url: "https://images.punkapi.com/v2/42.png",
-          id: "1",
-          tagline: "Explict Imperial Ale. Boom!",
-          description:
-            "Pounding a triple payload of the biggest North American hops humanity has devised, braced by a backbone of caramel malt, this beer is deep, astringent and resinous, pushing to the extremes of lupulin thresholds. There’s nothing inscrutable going on; no mystery in the backstory. It doesn’t seek to be understood. A beer incapable of empathy; only hop overload.",
-          abv: 9.2,
-          ibu: 123
-        },
-        {
-          name: "Big 'ld Ale!",
-          image_url: "https://images.punkapi.com/v2/42.png",
-          id: "1",
-          tagline: "Explict Imperial Ale. Boom!",
-          description:
-            "Pounding a triple payload of the biggest North American hops humanity has devised, braced by a backbone of caramel malt, this beer is deep, astringent and resinous, pushing to the extremes of lupulin thresholds. There’s nothing inscrutable going on; no mystery in the backstory. It doesn’t seek to be understood. A beer incapable of empathy; only hop overload.",
-          abv: 9.2,
-          ibu: 123
-        },
-        {
-          name: "Big 'ld Ale!",
-          image_url: "https://images.punkapi.com/v2/42.png",
-          id: "1",
-          tagline: "Explict Imperial Ale. Boom!",
-          description:
-            "Pounding a triple payload of the biggest North American hops humanity has devised, braced by a backbone of caramel malt, this beer is deep, astringent and resinous, pushing to the extremes of lupulin thresholds. There’s nothing inscrutable going on; no mystery in the backstory. It doesn’t seek to be understood. A beer incapable of empathy; only hop overload.",
-          abv: 9.2,
-          ibu: 123
-        },
-        {
-          name: "Big 'ld Ale!",
-          image_url: "https://images.punkapi.com/v2/42.png",
-          id: "1",
-          tagline: "Explict Imperial Ale. Boom!",
-          description:
-            "Pounding a triple payload of the biggest North American hops humanity has devised, braced by a backbone of caramel malt, this beer is deep, astringent and resinous, pushing to the extremes of lupulin thresholds. There’s nothing inscrutable going on; no mystery in the backstory. It doesn’t seek to be understood. A beer incapable of empathy; only hop overload.",
-          abv: 9.2,
-          ibu: 123
-        },
-        {
-          name: "Big 'ld Ale!",
-          image_url: "https://images.punkapi.com/v2/42.png",
-          id: "1",
-          tagline: "Explict Imperial Ale. Boom!",
-          description:
-            "Pounding a triple payload of the biggest North American hops humanity has devised, braced by a backbone of caramel malt, this beer is deep, astringent and resinous, pushing to the extremes of lupulin thresholds. There’s nothing inscrutable going on; no mystery in the backstory. It doesn’t seek to be understood. A beer incapable of empathy; only hop overload.",
-          abv: 9.2,
-          ibu: 123
-        }
-      ],
+      beers: [],
       error: null
     };
   }

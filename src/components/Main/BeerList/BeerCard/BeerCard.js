@@ -3,7 +3,7 @@ import "./BeerCard.styl";
 
 class BeerCard extends Component {
   render() {
-    let { name, tagline, image_url, description, abv, ibu } = this.props.beer;
+    let { name, tagline, image_url, abv, ibu } = this.props.beer;
     return (
       <div className="beer-card" tabIndex="0">
         <img
